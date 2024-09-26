@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3AA419AD2CA5AD5500AA3514 /* Auth0 in Frameworks */ = {isa = PBXBuildFile; productRef = 3AA419AC2CA5AD5500AA3514 /* Auth0 */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		3AA4198D2CA5AC2B00AA3514 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AA419AD2CA5AD5500AA3514 /* Auth0 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = SpaceFlightDemo;
 			packageProductDependencies = (
+				3AA419AC2CA5AD5500AA3514 /* Auth0 */,
 			);
 			productName = SpaceFlightDemo;
 			productReference = 3AA4197A2CA5AC2900AA3514 /* SpaceFlightDemo.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 3AA419712CA5AC2900AA3514;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3AA419AB2CA5AD5500AA3514 /* XCRemoteSwiftPackageReference "Auth0" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3AA4197B2CA5AC2900AA3514 /* Products */;
 			projectDirPath = "";
@@ -552,6 +561,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3AA419AB2CA5AD5500AA3514 /* XCRemoteSwiftPackageReference "Auth0" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/auth0/Auth0.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3AA419AC2CA5AD5500AA3514 /* Auth0 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3AA419AB2CA5AD5500AA3514 /* XCRemoteSwiftPackageReference "Auth0" */;
+			productName = Auth0;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3AA419722CA5AC2900AA3514 /* Project object */;
 }
