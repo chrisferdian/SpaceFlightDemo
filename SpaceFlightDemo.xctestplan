@@ -1,0 +1,44 @@
+{
+  "configurations" : [
+    {
+      "id" : "A7F6C942-984B-4E88-83B1-F8E5A52E0175",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "environmentVariableEntries" : [
+      {
+        "key" : "OS_ACTIVITY_MODE",
+        "value" : "disable"
+      }
+    ],
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:SpaceFlightDemo.xcodeproj",
+      "identifier" : "3AA419792CA5AC2900AA3514",
+      "name" : "SpaceFlightDemo"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:SpaceFlightDemo.xcodeproj",
+        "identifier" : "3AA4198B2CA5AC2B00AA3514",
+        "name" : "SpaceFlightDemoTests"
+      }
+    },
+    {
+      "enabled" : false,
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:SpaceFlightDemo.xcodeproj",
+        "identifier" : "3AA419952CA5AC2B00AA3514",
+        "name" : "SpaceFlightDemoUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
